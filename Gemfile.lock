@@ -1,3 +1,22 @@
+GIT
+  remote: https://github.com/sonots/fluentd-server
+  revision: 2c0e66a87fc07297b51eefcdb21d393142c324f1
+  specs:
+    fluentd-server (0.0.3)
+      activerecord
+      dotenv
+      foreman
+      sinatra
+      sinatra-activerecord
+      sinatra-contrib
+      sinatra-decorator
+      sinatra-flash
+      sinatra-redirect-with-flash
+      slim
+      thor
+      unicorn
+      unicorn-worker-killer
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -20,20 +39,6 @@ GEM
     dotenv (0.11.1)
       dotenv-deployment (~> 0.0.2)
     dotenv-deployment (0.0.2)
-    fluentd-server (0.0.3)
-      activerecord
-      dotenv
-      foreman
-      sinatra
-      sinatra-activerecord
-      sinatra-contrib
-      sinatra-decorator
-      sinatra-flash
-      sinatra-redirect-with-flash
-      slim
-      thor
-      unicorn
-      unicorn-worker-killer
     foreman (0.63.0)
       dotenv (>= 0.7)
       thor (>= 0.13.6)
@@ -89,5 +94,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fluentd-server
+  fluentd-server!
   pg
