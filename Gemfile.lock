@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/sonots/fluentd-server
-  revision: d1b7fabc7dfc01d9e3781116b0fa7a07827af5f1
+  revision: 5f2687e4f47251af839c145ab85de0bb3e1830e5
   specs:
-    fluentd-server (0.0.3)
+    fluentd-server (0.1.0)
       activerecord
       dotenv
       foreman
