@@ -11,10 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140512203133) do
+ActiveRecord::Schema.define(version: 3) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  create_table "delayed_jobs", force: true do |t|
+    t.integer  "priority",   default: 0, null: false
+    t.integer  "attempts",   default: 0, null: false
+    t.text     "handler",                null: false
+    t.text     "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string   "locked_by"
+    t.string   "queue"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority"
 
   create_table "posts", force: true do |t|
     t.string   "name"
@@ -23,6 +36,13 @@ ActiveRecord::Schema.define(version: 20140512203133) do
     t.datetime "updated_at"
   end
 
-  add_index "posts", ["name"], name: "index_posts_on_name", using: :btree
+  add_index "posts", ["name"], name: "index_posts_on_name", unique: true
+
+  create_table "tasks", force: true do |t|
+    t.string   "name"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
