@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/sonots/fluentd-server
-  revision: 19a73a7aaaa6e4445fbab9075de1bbc8a6d10aaf
+  revision: 73ee0e536e372ea96563cfb749b5b01ab90ad9ba
   specs:
     fluentd-server (0.1.0)
       activerecord
