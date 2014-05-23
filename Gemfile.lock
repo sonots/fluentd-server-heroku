@@ -65,7 +65,7 @@ GEM
       rack (>= 1.0)
     raindrops (0.13.0)
     rubyzip (0.9.9)
-    serf-td-agent (0.1.1)
+    serf-td-agent (0.1.2)
       gem-path (~> 0)
       rubyzip (~> 0)
     sinatra (1.4.5)
