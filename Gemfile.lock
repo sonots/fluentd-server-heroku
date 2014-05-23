@@ -20,14 +20,6 @@ GIT
       unicorn
       unicorn-worker-killer
 
-GIT
-  remote: https://github.com/sonots/serf-td-agent
-  revision: 009424991b102c0d98b1cf8814a3a1f43e9e16d2
-  specs:
-    serf-td-agent (0.1.1)
-      gem-path (~> 0)
-      rubyzip (~> 0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -73,6 +65,9 @@ GEM
       rack (>= 1.0)
     raindrops (0.13.0)
     rubyzip (0.9.9)
+    serf-td-agent (0.1.1)
+      gem-path (~> 0)
+      rubyzip (~> 0)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -115,4 +110,3 @@ PLATFORMS
 DEPENDENCIES
   fluentd-server!
   pg
-  serf-td-agent!
