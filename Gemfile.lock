@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/sonots/fluentd-server
-  revision: 01d8469cf95727a98b861d68654ff379f6707941
-  branch: delayed_job
+  revision: a49aa3c39f0620105a747513aee1b13c1f901851
   specs:
     fluentd-server (0.1.0)
       activerecord
@@ -20,6 +19,14 @@ GIT
       thor
       unicorn
       unicorn-worker-killer
+
+GIT
+  remote: https://github.com/sonots/serf-td-agent
+  revision: 009424991b102c0d98b1cf8814a3a1f43e9e16d2
+  specs:
+    serf-td-agent (0.1.1)
+      gem-path (~> 0)
+      rubyzip (~> 0)
 
 GEM
   remote: https://rubygems.org/
@@ -65,8 +72,7 @@ GEM
     rack-test (0.6.2)
       rack (>= 1.0)
     raindrops (0.13.0)
-    serf-td-agent (0.1.0)
-      gem-path (~> 0)
+    rubyzip (0.9.9)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -109,3 +115,4 @@ PLATFORMS
 DEPENDENCIES
   fluentd-server!
   pg
+  serf-td-agent!
