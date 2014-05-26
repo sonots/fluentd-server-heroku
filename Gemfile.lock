@@ -1,9 +1,10 @@
 GIT
   remote: https://github.com/sonots/fluentd-server
-  revision: 8b25833f4c3b7e8b27fb51561d51fcf5ca43038a
+  revision: 1ab202858e4e2eb3de3fc15102507db5fdf7326e
   specs:
     fluentd-server (0.1.0)
       activerecord
+      acts_as_file
       daemons
       delayed_job_active_record
       dotenv
@@ -36,6 +37,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    acts_as_file (0.0.1)
     arel (5.0.1.20140414130214)
     backports (3.6.0)
     builder (3.2.2)
